@@ -14,6 +14,7 @@
 		2AFDAFC720D854AE000E9A73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AFDAFC520D854AE000E9A73 /* Main.storyboard */; };
 		2AFDAFC920D854B4000E9A73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AFDAFC820D854B4000E9A73 /* Assets.xcassets */; };
 		2AFDAFCC20D854B4000E9A73 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AFDAFCA20D854B4000E9A73 /* LaunchScreen.storyboard */; };
+		2AFDAFD420D866CF000E9A73 /* ghost.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2AFDAFD320D866CF000E9A73 /* ghost.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		2AFDAFC820D854B4000E9A73 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2AFDAFCB20D854B4000E9A73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2AFDAFCD20D854B4000E9A73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2AFDAFD320D866CF000E9A73 /* ghost.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ghost.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 		2AFDAFBC20D854AE000E9A73 /* TutoJuegoFantasmas */ = {
 			isa = PBXGroup;
 			children = (
+				2AFDAFD320D866CF000E9A73 /* ghost.wav */,
 				2AFDAFBD20D854AE000E9A73 /* AppDelegate.swift */,
 				2AFDAFBF20D854AE000E9A73 /* Scene.sks */,
 				2AFDAFC120D854AE000E9A73 /* Scene.swift */,
@@ -130,6 +133,7 @@
 			files = (
 				2AFDAFC020D854AE000E9A73 /* Scene.sks in Resources */,
 				2AFDAFCC20D854B4000E9A73 /* LaunchScreen.storyboard in Resources */,
+				2AFDAFD420D866CF000E9A73 /* ghost.wav in Resources */,
 				2AFDAFC920D854B4000E9A73 /* Assets.xcassets in Resources */,
 				2AFDAFC720D854AE000E9A73 /* Main.storyboard in Resources */,
 			);
@@ -291,6 +295,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JHTZUEGT7B;
 				INFOPLIST_FILE = TutoJuegoFantasmas/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -309,6 +314,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JHTZUEGT7B;
 				INFOPLIST_FILE = TutoJuegoFantasmas/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

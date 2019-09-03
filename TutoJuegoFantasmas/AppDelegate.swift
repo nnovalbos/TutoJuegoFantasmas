@@ -5,6 +5,8 @@
 //  Created by Nicolas Novalbos on 18/6/18.
 //  Copyright © 2018 Nicolás Novalbos. All rights reserved.
 //
+// Fuente : https://blog.pusher.com/building-ar-game-arkit-spritekit/
+//
 
 import UIKit
 

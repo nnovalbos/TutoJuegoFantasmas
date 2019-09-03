@@ -16,18 +16,31 @@ class ViewController: UIViewController, ARSKViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        /*
+         Esto asegurará que nuestra escena llene toda la vista y, por lo tanto, toda la pantalla (recuerde que el ARSKView definido en Main.storyboard ocupa toda la pantalla). Esto también ayudará a colocar las etiquetas del juego en la sección inferior izquierda de la pantalla, con las coordenadas de posición definidas en la escena.
+         */
         
+     
+        
+        
+        // codigo que viene por defecto
         // Set the view's delegate
         sceneView.delegate = self
         
         // Show statistics such as fps and node count
-        sceneView.showsFPS = true
-        sceneView.showsNodeCount = true
-        
+     //   sceneView.showsFPS = true
+      //  sceneView.showsNodeCount = true
+        /*
         // Load the SKScene from 'Scene.sks'
         if let scene = SKScene(fileNamed: "Scene") {
             sceneView.presentScene(scene)
         }
+        */
+        
+        let scene = Scene(size: sceneView.bounds.size)
+        scene.scaleMode = .resizeFill
+        sceneView.presentScene(scene)
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -55,11 +68,24 @@ class ViewController: UIViewController, ARSKViewDelegate {
     // MARK: - ARSKViewDelegate
     
     func view(_ view: ARSKView, nodeFor anchor: ARAnchor) -> SKNode? {
+        
+        let ghostId = randomInt(min: 1, max: 3)
+        let node = SKSpriteNode(imageNamed: "ghost\(ghostId)")
+        node.name = "ghost"
+        
+        return node
+        
+        /* venia por defecto
         // Create and configure a node for the anchor added to the view's session.
         let labelNode = SKLabelNode(text: "👾")
         labelNode.horizontalAlignmentMode = .center
         labelNode.verticalAlignmentMode = .center
         return labelNode;
+        */
+    }
+    
+    func randomInt(min: Int, max: Int) -> Int {
+        return min + Int(arc4random_uniform(UInt32(max - min + 1)))
     }
     
     func session(_ session: ARSession, didFailWithError error: Error) {
